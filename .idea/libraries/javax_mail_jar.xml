@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="javax.mail.jar">
+    <CLASSES>
+      <root url="jar://D:/Pobrane/javax.mail.jar.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="jar://D:/Pobrane/javax.mail.jar.zip!/" recursive="false" />
+  </library>
+</component>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="635.0" stylesheets="@styleLogin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TextField fx:id="loginTextField" layoutX="300.0" layoutY="81.0" onKeyReleased="#onKeyReleased" />
+      <PasswordField fx:id="passwordTextField" layoutX="300.0" layoutY="153.0" onKeyReleased="#onKeyReleased" />
+      <Label layoutX="168.0" layoutY="85.0" text="Login:" />
+      <Label layoutX="171.0" layoutY="157.0" text="Hasło:" />
+      <Button fx:id="buttonLogIn" layoutX="318.0" layoutY="237.0" mnemonicParsing="false" onAction="#LogIn" prefHeight="50.0" prefWidth="113.0" text="Zaloguj" />
+      <CheckBox fx:id="showPasswordCheckBox" layoutX="386.0" layoutY="203.0" mnemonicParsing="false" onAction="#showPassword" text="Odsłoń hasło" />
+      <Text layoutX="14.0" layoutY="361.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jeżeli nie masz jeszcze konta - " />
+      <Button fx:id="changeSceneButton" layoutX="188.0" layoutY="344.0" mnemonicParsing="false" onAction="#changeScene" text="Zarejestruj się!" />
+      <Label fx:id="labelInformation" layoutX="309.0" layoutY="186.0" prefHeight="17.0" prefWidth="131.0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <TextField fx:id="maskPasswordField" layoutX="300.0" layoutY="153.0" onKeyReleased="#onKeyReleased" />
+      <CheckBox fx:id="adminCheckBox" layoutX="201.0" layoutY="203.0" mnemonicParsing="false" text="Zaloguj jako administrator" />
+   </children>
+</AnchorPane>

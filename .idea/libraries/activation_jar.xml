@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="activation.jar">
+    <CLASSES>
+      <root url="jar://D:/Pobrane/activation.jar.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="jar://D:/Pobrane/activation.jar.zip!/" recursive="false" />
+  </library>
+</component>

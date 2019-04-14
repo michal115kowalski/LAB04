@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="456.0" prefWidth="668.0" stylesheets="@styleLogin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegisterController">
+   <children>
+      <Text layoutX="185.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Imię" />
+      <Text layoutX="182.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwisko" />
+      <Text layoutX="185.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login:" />
+      <Text layoutX="185.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hasło:" />
+      <Text layoutX="186.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+      <Text fontSmoothingType="LCD" layoutX="168.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Formularz rejestracji:">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="29.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameField" layoutX="300.0" layoutY="89.0" onKeyReleased="#keyReleasedProperty" />
+      <TextField fx:id="lastNameField" layoutX="300.0" layoutY="130.0" onKeyReleased="#keyReleasedProperty" />
+      <TextField fx:id="loginField" layoutX="300.0" layoutY="171.0" onKeyReleased="#keyReleasedProperty" />
+      <TextField fx:id="emailField" layoutX="300.0" layoutY="290.0" onKeyReleased="#keyReleasedProperty" />
+      <PasswordField fx:id="passwordField" layoutX="300.0" layoutY="213.0" onKeyReleased="#keyReleasedProperty" />
+      <Button fx:id="registerButton" layoutX="401.0" layoutY="369.0" mnemonicParsing="false" onAction="#registerAction" prefHeight="39.0" prefWidth="97.0" text="Zarejestruj się" />
+      <PasswordField fx:id="repeatPasswordField" layoutX="300.0" layoutY="249.0" onKeyReleased="#keyReleasedProperty" />
+      <Text layoutX="186.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Powtórz hasło:" />
+      <Button fx:id="buttonBackLogin" layoutX="14.0" layoutY="396.0" mnemonicParsing="false" onAction="#backLogin" text="Powrót to logowania" />
+   </children>
+</AnchorPane>
