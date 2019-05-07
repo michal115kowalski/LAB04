@@ -9,11 +9,17 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@styleLogin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerUser">
    <children>
-      <Text layoutX="221.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="USER">
-         <font>
-            <Font name="System Bold" size="64.0" />
-         </font>
-      </Text>
       <Button fx:id="logoutButton" layoutX="25.0" layoutY="346.0" mnemonicParsing="false" onAction="#logout" text="Wyloguj" />
+      <ComboBox fx:id="selectEventComboBox" layoutX="25.0" layoutY="79.0" onAction="#selectEvent" prefWidth="150.0" promptText="Wybierz wydarzenie" />
+      <TextArea fx:id="agendaTextArea" layoutX="200.0" layoutY="66.0" prefHeight="200.0" prefWidth="200.0" />
+      <ComboBox fx:id="selectTypeComboBox" layoutX="25.0" layoutY="141.0" prefWidth="150.0" promptText="Typ uczestnictwa" />
+      <ComboBox fx:id="foodComboBox" layoutX="25.0" layoutY="200.0" prefWidth="150.0" promptText="Wyżywienie" />
+      <Text layoutX="454.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Termin wydarzenia" />
+      <Label fx:id="terminLabel" layoutX="444.0" layoutY="104.0" prefHeight="44.0" prefWidth="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="addEventButton" layoutX="322.0" layoutY="310.0" mnemonicParsing="false" onAction="#addEvent" text="Dołącz do wydarzenia!" />
    </children>
 </AnchorPane>

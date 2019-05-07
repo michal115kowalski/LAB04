@@ -16,6 +16,7 @@ import java.sql.*;
 public class Controller {
     private int checkLogin=0;
     private String data=null;
+    private static String indexUser;
     Connection conn=null;
     private String text;
 
@@ -83,7 +84,7 @@ public class Controller {
     public void login(String username,String password,String uprawnienia,ActionEvent event) throws IOException{
         ResultSet myRes=null;
         try{
-            PreparedStatement preparedStatement=conn.prepareStatement("Select login,haslo from uzytkownicy where login=? and haslo=? and uprawnienia=?");
+            PreparedStatement preparedStatement=conn.prepareStatement("Select login,haslo,id from uzytkownicy where login=? and haslo=? and uprawnienia=?");
             preparedStatement.setString(1,username);
             preparedStatement.setString(2,password);
             preparedStatement.setString(3,uprawnienia);
@@ -94,6 +95,7 @@ public class Controller {
                 if(uprawnienia.equals("admin")) {
                     loginAdmin(event,"Admin.fxml");
                 }else loginAdmin(event,"User.fxml");
+                indexUser=myRes.getString("id");
             }else {
                 JOptionPane.showMessageDialog(null,"Podano złe dane do logowania!");
                 checkLogin++;
@@ -119,5 +121,9 @@ public class Controller {
        Stage window=(Stage)((Node)event.getSource()).getScene().getWindow();
        window.setScene(admnScene);
        window.show();
+   }
+
+   public static String getUserIndex(){
+        return indexUser;
    }
 }

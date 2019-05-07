@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="576.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuOptions.EventsController">
+   <children>
+      <Text layoutX="313.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dodaj wydarzenie" wrappingWidth="209.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameEvent" layoutX="47.0" layoutY="263.0" onKeyReleased="#releasedKey" prefHeight="25.0" prefWidth="200.0" />
+      <TextArea fx:id="agendaEvent" layoutX="281.0" layoutY="188.0" onKeyReleased="#releasedKey" prefHeight="249.0" prefWidth="273.0" />
+      <DatePicker fx:id="dateEvent" layoutX="624.0" layoutY="263.0" onAction="#releasedKey" />
+      <Text layoutX="98.0" layoutY="224.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwa wydarzenia" />
+      <Text layoutX="398.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="agenda" />
+      <Text layoutX="707.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data:" />
+      <Button fx:id="addEventButton" layoutX="721.0" layoutY="511.0" mnemonicParsing="false" onAction="#addEvent" text="Dodaj wydarzenie" />
+   </children>
+</AnchorPane>

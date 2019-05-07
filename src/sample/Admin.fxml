@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -7,13 +8,34 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@styleLogin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerAdmin">
+<AnchorPane prefHeight="801.0" prefWidth="1058.0" stylesheets="@styleLogin.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerAdmin">
    <children>
-      <Text layoutX="201.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin">
-         <font>
-            <Font name="Arial Rounded MT Bold" size="64.0" />
-         </font>
-      </Text>
-      <Button fx:id="logoutButton" layoutX="20.0" layoutY="351.0" mnemonicParsing="false" onAction="#logout" text="Wyloguj" />
+      <Button fx:id="logoutButton" layoutX="14.0" layoutY="755.0" mnemonicParsing="false" onAction="#logout" text="Wyloguj" />
+      <MenuBar fx:id="myMenuBar" layoutY="2.0" prefHeight="25.0" prefWidth="1058.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Użytkownicy">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#addUser" text="Dodaj użytkownika" />
+              <MenuItem mnemonicParsing="false" onAction="#deleteUser" text="Usuń użytkownika/zmień hasło" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Wydarzenia">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#addEvent" text="Dodaj wydarzenie" />
+                  <MenuItem mnemonicParsing="false" onAction="#manageEvent" text="Zarządzaj wydarzeniem" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Zapisy">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#manageRecord" text="Zarzadzaj zapisami" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorPane" layoutX="100.0" layoutY="103.0" prefHeight="576.0" prefWidth="858.0">
+         <padding>
+            <Insets right="100.0" />
+         </padding></AnchorPane>
+      <BorderPane layoutX="-15.0" layoutY="73.0" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </AnchorPane>

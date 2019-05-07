@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuOptions.DeleteUserController">
+   <children>
+      <ChoiceBox fx:id="choiceBoxDelete" layoutX="52.0" layoutY="94.0" prefWidth="150.0" />
+      <TextField fx:id="deleteTextField" layoutX="267.0" layoutY="94.0" onKeyReleased="#keyReleasedProperty" />
+      <Text layoutX="73.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wprowadz parametr" />
+      <Button fx:id="deleteButton" layoutX="211.0" layoutY="188.0" mnemonicParsing="false" onAction="#deleteButtonAction" text="Usuń użytkownika" />
+      <Text layoutX="305.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Podaj wartość" />
+      <TextField fx:id="newPasswordField" layoutX="53.0" layoutY="270.0" onKeyReleased="#keyReleasedProperty" />
+      <Text layoutX="67.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wprowadz nowe hasło" />
+      <Button fx:id="changePasswordButton" layoutX="162.0" layoutY="331.0" mnemonicParsing="false" onAction="#changePassword" text="Zmień haslo" />
+   </children>
+</AnchorPane>

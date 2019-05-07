@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="576.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuOptions.ManageEventsController">
+   <children>
+      <Text layoutX="612.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data:" />
+      <Text layoutX="408.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Agenda" />
+      <Text layoutX="26.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nazwa wydarzenia:" />
+      <DatePicker fx:id="selectEventDate" layoutX="659.0" layoutY="291.0" />
+      <TextArea fx:id="selectEventAgenda" layoutX="279.0" layoutY="189.0" prefHeight="168.0" prefWidth="295.0" />
+      <TextField fx:id="selectEventName" layoutX="27.0" layoutY="332.0" prefHeight="25.0" prefWidth="200.0" />
+      <Button fx:id="modifyEventButton" layoutX="429.0" layoutY="488.0" mnemonicParsing="false" onAction="#modifyEvent" text="Modyfikuj wydarzenie" />
+      <ChoiceBox fx:id="selectEventChoiceBox" layoutX="26.0" layoutY="168.0" prefWidth="150.0" />
+      <Button fx:id="deleteEventButton" layoutX="626.0" layoutY="488.0" mnemonicParsing="false" onAction="#deleteEvent" text="Usuń wydarzenie" />
+      <CheckBox fx:id="allowEventDelete" layoutX="636.0" layoutY="442.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Potwierdz" />
+      <Text layoutX="47.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wybierz wydarzenie:" />
+      <Text layoutX="305.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Zarządzaj wydarzeniem" wrappingWidth="247.87890625">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

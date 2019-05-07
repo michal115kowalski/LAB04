@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="858.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MenuOptions.RegistrationEventController">
+   <children>
+      <TableView fx:id="tableView" layoutX="87.0" layoutY="68.0" onMouseReleased="#example" prefHeight="210.0" prefWidth="684.0">
+         <columns>
+            <TableColumn fx:id="columnIdRegistration" prefWidth="116.0" text="id_zapisu" />
+            <TableColumn fx:id="columnIdEvent" prefWidth="132.0" text="id_wydarzenia" />
+            <TableColumn fx:id="columnIdUser" prefWidth="126.0" text="id_uzytkownika" />
+            <TableColumn fx:id="columnFoodType" prefWidth="151.0" text="typ_wyzywienia" />
+            <TableColumn fx:id="columnFood" prefWidth="156.0" text="wyzywienie" />
+         </columns>
+      </TableView>
+      <Text layoutX="195.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista zapisów oczekujących na zatwierdzenie">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Button fx:id="rejectButton" layoutX="195.0" layoutY="388.0" mnemonicParsing="false" onAction="#rejectRecord" text="Odrzuć zapis" />
+      <Button fx:id="confirmButton" layoutX="565.0" layoutY="388.0" mnemonicParsing="false" onAction="#confirmRecord" text="Zatwierdź zapis" />
+   </children>
+</AnchorPane>
